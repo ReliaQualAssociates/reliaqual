@@ -1,0 +1,248 @@
+body {
+  background-color: rgb(240, 240, 240);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.thumbnails .well h3 {margin-top: 0;}
+
+.courses h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+.footer {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 90%;
+}
+
+.footer-links {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 0 14px 0;
+}
+.sidebar .well>*:last-child,
+.sidebar ul li:last-child p:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar a {
+  font-weight: 600;
+}
+
+#upcoming p {
+  line-height: 1.2;
+}
+
+.colorband {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 425px;
+  min-width: 1040px;
+  z-index: -1;
+  background-image: url(../images/diamondbg.png);
+  background-color: #3366CC;
+}
+
+body.home .secondary {
+  display: none;
+}
+
+.primary-nav {
+  width: 1040px;
+  margin: 0 auto;
+}
+.primary-nav>table {
+  width: 100%;
+}
+.primary-nav td {
+  width: 1px;
+  height: 50px;
+  padding: 0;
+  background-color: #333399;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 600;
+}
+.primary-nav .link.active {
+  background-color: transparent;
+  background: url(../images/primaryactive2.png) bottom center;
+}
+.primary-nav td.brand {
+  width: auto;
+}
+.primary-nav td.brand>* {
+  position: relative;
+  left: -25px;
+}
+.primary-nav td.brand img {
+  width: 91px;
+  height: 32px;
+}
+body .primary-nav td.left, body .primary-nav td.right {
+  background-color: transparent;
+}
+.primary-nav td.left {
+  width: 30px;
+}
+.primary-nav td.right {
+  width: 35px;
+}
+.primary-nav td.left div, .primary-nav td.right div {
+  height: 50px;
+  background-color: #333399;
+}
+.primary-nav td.left div {
+  width: 30px;
+}
+.primary-nav td.right div {
+  width: 35px;
+}
+.primary-nav td.left div {
+  border-bottom-left-radius: 20px;
+}
+.primary-nav td.right div {
+  border-bottom-right-radius: 20px;
+}
+.primary-nav td a {
+  display: block;
+  margin: 0 15px 0 15px;
+  color: rgb(220, 220, 220);
+  text-shadow: black 0 -1px 1px;
+}
+.primary-nav td a:hover {
+  text-decoration: none;
+}
+
+.secondary {
+  position: relative;
+  width: 940px;
+  margin: 16px auto -41px auto;
+  color: rgb(240, 240, 240);
+  text-align: justify;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  line-height: 1.4;
+
+   /* IE special */  
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  z-index: 100;
+}
+.secondary:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.secondary h3 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+
+  /* ie 7*/ 
+  *display: inline;
+  *zoom: 1;
+  *text-align: left; 
+}
+.secondary h3 a, .secondary h3 a:hover {
+  color: white;
+  text-decoration: none;
+}
+ul.secondary-nav {
+  display: inline-block;
+  vertical-align: baseline;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+
+  /* ie 7*/
+  *display: inline;
+  *zoom:1;
+  *text-align: right;
+}
+ul.secondary-nav li {
+  display: inline-block;
+  margin-left: 30px;
+  padding-bottom: 14px;
+}
+ul.secondary-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+ul.secondary-nav li.active {
+  background: url(../images/secondaryactive.png) bottom center no-repeat;
+}
+
+.mainbody {
+  position: relative;
+  width: 940px;
+  padding: 20px 30px;
+  margin: 10px auto 0 auto;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0.5px rgba(40, 40, 40, 0.2), 0 2px 4px 0.5px rgba(40, 40, 40, 0.2);
+}
+
+.course-catalog p {
+  margin-top: 0;
+}
+
+.page-header {
+  margin: 0;
+  border: none;
+}
+
+ul.nav-list li.active a {
+  border-radius: 4px;
+}
+
+th {
+  text-align: left;
+}
+
+img.headshot {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+  margin-bottom: 2px;
+  box-shadow: 1px 1px 3px rgba(40, 40, 40, 0.6);
+}
+
+img.figure {
+  display: block;
+  margin: 12px 0;
+  padding: 3px
+}
+
+img.bordered_figure {
+  display: block;
+  margin: 12px 0;
+  padding: 3px;
+  border: 1px solid #CCC;
+}
+
+strong.semi {
+  font-weight: 600;
+}
+
+.welcome p, .goodbye p {
+  font-size: 20px;
+  line-height: 1.2;
+}
