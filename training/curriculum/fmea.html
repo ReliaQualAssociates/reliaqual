@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<title>FMEA (Failure Mode and Effects Analysis) Training, FMECA (Failure Mode, Effects, and Criticality Analysis) Training</title>
+    	<meta name="viewport" content="width=1100"/>
+
+    	<script src="/javascripts/jquery-1.8.2.min.js"></script>
+    	<script src="/javascripts/bootstrap.js"></script>
+
+    	<!-- Le styles -->
+    	<link href="/stylesheets/bootstrap.css" rel="stylesheet">
+    	<link href="/stylesheets/reliaqual.css" rel="stylesheet">
+    
+    	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    	<!--[if lt IE 9]>
+        	<link href="/stylesheets/rstudio-ie8.css" rel="stylesheet">
+        	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+
+    	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+    	<!-- Fav icon -->
+    	<link rel="icon" href="/images/bigorb.png">
+    
+	</head>
+
+	<body class="training">
+    	<div class="colorband"></div>
+
+    	<!-- Top navigation bar -->
+    	<div class="primary-nav">
+    		<table>
+       			<tr>
+       				<td class="left">
+       					<div></div>
+       				</td>
+       				<td class="brand">
+       					<a href="/">
+       						<img src="/images/RQA.2x.png" 
+       						title="FMEA (Failure Mode and Effects Analysis) Training, FMECA (Failure Mode, Effects, and Criticality Analysis) Training<"
+       						alt="FMEA (Failure Mode and Effects Analysis) Training, FMECA (Failure Mode, Effects, and Criticality Analysis) Training<"
+       						width="91" height="32"/>
+       					</a>
+       				</td>
+       				
+           			<td class="link home"><a href="&#x2F;">Home</a></td>
+
+            		<td class="link consulting"><a href="&#x2F;consulting&#x2F;">Consulting</a></td>
+
+            		<td class="link training active"><a href="&#x2F;training&#x2F;">Training</a></td>
+
+            		<td class="link rtk"><a href="&#x2F;rtk&#x2F;">RTK</a></td>
+
+        	    	<td class="link portal"><a href="&#x2F;portal&#x2F;">Client Portal</a></td>
+                      
+    	        	<!-- td class="link about"><a href="&#x2F;about&#x2F;">About</a></td -->
+          
+	            	<!-- td class="link "><a href="http:&#x2F;&#x2F;blog.rstudio.org&#x2F;">Blog</a></td -->
+            	
+	          		<td class="right"><div></div></td>
+       			</tr>
+    		</table>
+    	</div>
+
+    	<div class="secondary">
+    		<h3 class="area"><a href="/training/">Training</a></h3>
+    		<ul class="secondary-nav">
+       			<li class="active"><a href="/training/">Course catalog</a></li>
+       			<li><a href="/training/on-site/">On-site training</a></li>
+       			<li><a href="/training/philosophy.html">Our philosophy</a></li>
+			</ul>
+    	</div>
+    
+    	<div class="mainbody">
+      
+       		<style type="text/css">
+  				.courses .page-header h1 {
+    				margin-bottom: 0;
+  				}
+  				.courses .page-header h2 {
+    				margin-top: 0;
+    				line-height: 1.4;
+    				font-size: 22px;
+    				font-weight: normal;
+    				color: #999;
+  				}
+  				.take-this {
+  				}
+  				.take-this h4 {
+    				margin: 0;
+    				font-weight: 600;
+  				}
+  				.take-this p:last-child {
+    				margin-bottom: 0;
+  				}
+  				.take-this .btn-group {
+    				display: inline-block;
+  				}
+  				.take-this .btn {
+    				margin-right: 8px;
+  				}
+  				#attend {
+    				display: none;
+    				padding: 12px;
+  				}
+  				#attend h3 {
+    				margin: 0;
+    				font-weight: normal;
+  				}
+  				#attend hr {
+    				margin: 6px 0;
+  				}
+  				#attend h4 {
+					margin-top: 20px;
+				}
+			</style>
+  
+			<!-- Page container -->
+			<div class="container">
+   				<div class="row">
+
+   					<!-- Side navigation bar -->
+   					<div class="span4">
+     					<ul class="nav nav-list">
+       						<li class="nav-header">Course list</li>
+       						<li class=""><a href="/training/curriculum/intro_to_reliability.html">Introduction to Reliability</a></li>
+       						<li class=""><a href="/training/curriculum/intro_to_reliability_math.html">Introduction to Reliability Mathematics</a></li>
+       						<li class=""><a href="/training/curriculum/requirements_and_allocation.html">Reliability Requirements & Allocation</a></li>
+       						<li class=""><a href="/training/curriculum/modeling_and_prediction.html">Reliability Modeling & Prediction</a></li>
+       						<li class="active"><a href="/training/curriculum/fmea.html">Failure Mode and Effects Analysis (FMEA)</a></li>
+       						<li class=""><a href="/training/curriculum/fta.html">Fault Tree Analysis</a></li>
+       						<li class=""><a href="/training/curriculum/rg_testing.html">Reliability Growth Testing</a></li>
+       						<li class=""><a href="/training/curriculum/survival_data_analysis.html">Survival Data Analysis</a></li>
+							<li class=""><a href="/training/on-site/">Build your own course</a></li>
+       					</ul>
+   					</div>
+
+   					<!--Body content-->
+   					<div class="span8 courses">
+       					<div class="page-header">
+       						<h1>Introduction to FMEA/FMECA</h1>
+       						<h2></h2>
+       					</div>
+
+       					<div class="take-this well">
+							<h4>Take this course</h4>
+
+   							<p>Schedule on-site training at your location.</p>
+   							<a class="btn btn-success" href="/training/on-site/">Schedule 
+   							on-site training</a>
+						</div>
+
+       					<h3>Overview</h3>
+
+       					<p>This training seminar provides an overview of the concepts and 
+       					procedures for FMEA and FMECA.  Concepts and tools you could use to 
+       					help your organization will be presented during this course:</p>
+
+						<ul>
+							<li>Proactively consider potential failures, prioritize issues 
+							based on risk and then initiate improvements early in 
+							development when modifications tend to have the biggest impact 
+							for the lowest cost.</li>
+							<li>Create a searchable knowledge base of reliability-related 
+							information for your designs, which can contribute to the 
+							development of test plans, control plans, future design efforts 
+							and other activities.</li>
+							<li>Comply with supplier or regulatory requirements while 
+							promoting analysis and data management processes that are 
+							efficient and effective, utilizing lessons learned from past 
+							analyses when applicable.</li>
+						</ul>       					
+
+						<p>The objectives for this training course are to:</p>
+
+						<ul>
+							<li>Provide attendees with a thorough understanding and working 
+							knowledge of the basics of FMEA.</li>
+							<li>Learn the best practice step-by-step procedures for 
+							performing FMEAs.</li>
+							<li>Examine the key factors that contribute to successful FMEA 
+							projects and how to implement an effective FMEA process.</li>
+						</ul>
+
+						<p>Although this class will provide many opportunities for 
+						attendees to discuss their particular analysis challenges and to 
+						practice the skills required for effective analysis, this course is 
+						not intended to provide an in-depth FMEA facilitation for any 
+						particular component or product.</p>
+
+						<h3>What You Will Learn</h3>
+
+						<p><strong>Introduction and Overview</strong></p>
+
+						<ul>
+							<li>Definition and historical background.</li>
+							<li>Examine applications and benefits.</li>
+							<li>Importance of FMEA as Part of Design for Reliability (DFR) 
+							Strategy</li>
+							<li>Introduce types of FMEA and published standards:
+								<ul>
+									<li>Design FMEA (DFMEA), Process FMEA (PFMEA), Failure 
+									Mode, Effects, and Criticality Analysis (FMECA).</li>
+									<li>SAE J1739, AIAG FMEA, MIL-STD-1629A.</li>
+								</ul>
+							</li>
+						</ul>
+    					 					
+    					<p><strong>Basic FMEA Analysis Process</strong></p>
+
+							<ul>
+								<li>How to determine the scope of the analysis.
+									<ul>
+	    								<li>System Configurations</li>
+    									<li>Boundary Diagrams</li>
+    									<li>Preliminary Risk Assessments</li>
+    									<li>Process Flow Diagrams</li>
+    								</ul>
+								<li>How to assemble the appropriate Analysis Team and 
+								establish Ground Rules for the analysis.</li>
+								<li>How to gather and evaluate Data Sources.</li>
+								<li>How to identify and evaluate Functions.</li>
+								<li>How to identify and evaluate Failure Modes.</li>
+								<li>How to identify and evaluate Effects.</li>
+								<li>How to identify and evaluate Causes.</li>
+								<li>How to identify and evaluate Controls.</li>
+								<li>How to identify and evaluate Risk.
+									<ul>
+        								<li>Qualitative Criticality Analysis.</li>
+        								<li>Quantitative Criticality Analysis.</li>
+        								<li>Risk Priority Numbers (RPNs).</li>
+        								<li>Other view of ratings and RPNs.</li>
+									</ul>
+								<li>How to identify and evaluate Recommended Actions.</li>
+								<li>How to Distribute, Review and Update the analysis.</li>
+    						</ul>
+
+						<!-- p><strong>Design Review Based on Failure Mode (DRBFM)</strong></p>
+
+							<ul>
+								<li>Introduction to Design Review Based on Failure Mode (DRBFM).</li>
+								<li>Focusing on changes to an existing design.</li>
+								<li>Focusing on "points of concern" to the engineers.</li>
+							</ul -->
+
+						<p><strong>Integration with Other Analyses</strong></p>
+							
+							<ul>
+								<li>Boundary Diagram input to the Design FMEA</li>
+								<li>Design FMEA input to Test Plan (DVP&R).</li>
+								<li>Design FMEA input to Process FMEA.</li>
+								<li>Process Flow Diagram input to Process FMEA.</li>
+								<li>Role of FMEA in maintenance planning and optimization.</li>
+							</ul>
+
+						<p><strong>Key Factors for Effective FMEA Projects</strong></p>
+
+							<ul>
+								<li>Learn the most common mistakes made by FMEA 
+								practitioners and how to correct them.</li>
+								<li>Learn the FMEA quality objectives that will ensure 
+								uniformly effective results with any types of FMEAs.</li>
+								<li>How to perform FMEA audits.</li>
+								<li>Overview of the characteristics of successful FMEA 
+								facilitation.</li>
+							</ul>
+
+						<p><strong>Using the RTK Software for FMEA Analysis, Data 
+						Management and Reporting</strong></p>
+
+							<ul>
+								<li>Organizing information in databases and projects.</li>
+								<li>Using the hierarchical, worksheet and filtered views to 
+								enter and manage your FMEA analysis information.</li>
+								<li>Data entry tools and shortcuts.</li>
+								<li>Working with RPNs or Criticality Analysis.</li>
+								<li>Tracking the completion of recommended actions.</li>
+							</ul>
+
+
+						<p><strong>Class Exercise Using RTK</strong></p>
+
+						<p>The instructor will lead the class through a simple exercise 
+						designed to introduce participants to the use of the RTK software 
+						for entering FMEA data.</p>
+  
+
+						<p><strong>Case Study Example #1</strong></p>
+
+						<p>The instructor will lead the class through a case study example 
+						that implements the analysis skills discussed in the course.</p>
+
+						<p><strong>Best Practice for a Successful FMEA Process</strong></p>
+
+							<ul>
+								<li>Why implement an FMEA process?</li>
+								<li>Strategic decisions to be made by management.</li>
+								<li>Resource decisions to be made by management.</li>
+								<li>Importance of management support.</li>
+								<li>Generic FMEAs and program-specific FMEAs.</li>
+								<li>Management review and FMEA quality audits.</li>
+								<li>Supplier FMEAs.</li>
+								<li>Tracking the completion of recommended actions.</li>
+								<li>Linkage to other key processes.</li>
+								<li>Integrated software support.</li>
+							</ul>
+
+						<!-- p><strong>Configuration Options and Advanced Features in RTK</strong></p>
+
+							<ul>
+								<li>Creating and managing project profiles.
+									<ul>
+										<li>Data fields captured in the analysis worksheet.</li>
+										<li>Rating scales.</li>
+										<li>Action categories, special characteristics, etc.</li>
+									</ul>
+								</li>
+								<li>Creating and managing custom templates for queries and reports.</li>
+								<li>Creating and managing phrase sets.</li>
+								<li>Creating and managing user accounts.
+									<ul>
+										<li>Access levels.</li>
+										<li>Restricting access to projects based on access level.</li>
+									</ul>
+								</li>
+								<li>Using Change Log for revision control.
+									<ul>
+										<li>Activating the change log.</li>
+										<li>History of changes.</li>
+										<li>Electronic approval tracking.</li>
+									</ul>
+								</li>
+							</ul -->
+
+						<p><strong>Case Study Example #2</strong></p>
+
+						<p>The instructor will lead the class through a second case study 
+						example that implements the analysis skills discussed in the 
+						course.</p> 
+        
+       					<h3>What's included?</h3>
+
+						<p>All participants who register for <strong>Introduction to 
+						FMEA</strong> will receive a copy all the slides, exercises and 
+						data sets used in the course.</p>
+
+						<h3>What should I bring?</h3>
+
+						<p>No special materials are required for this course.</p>
+
+       					<div class="take-this well">
+							<h4>Take this course</h4>
+   							<p>Schedule on-site training at your location.</p>
+   							<a class="btn btn-success" href="/training/on-site/">Schedule 
+   							on-site training</a>
+						</div>
+   					</div>
+    			</div>
+			</div>
+    	</div>
+
+    	<!-- footer -->
+    	<div class="container">
+      		<div class="footer">
+        		<span class="footer-links">&copy; ReliaQual Associates, LLC</span>
+      		</div>
+    	</div>
+    		
+		<!-- Piwik -->
+		<script type="text/javascript">
+  			var _paq = _paq || [];
+  			_paq.push(["trackPageView"]);
+  			_paq.push(["enableLinkTracking"]);
+
+  			(function() {
+    			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.reliaqual.com/piwik/";
+    			_paq.push(["setTrackerUrl", u+"piwik.php"]);
+    			_paq.push(["setSiteId", "1"]);
+    			var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    			g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  			})();
+		</script>
+		<!-- End Piwik Code -->
+		
+		<!-- Google Analytics Code -->
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-55008669-1', 'auto');
+  			ga('send', 'pageview');
+
+		</script>
+		<!-- End Google Analytics Code -->
+  	</body>
+</html>
