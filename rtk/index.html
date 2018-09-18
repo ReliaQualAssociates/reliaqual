@@ -1,414 +1,326 @@
 <!DOCTYPE HTML>
 <html lang="en">
-	<head>
-   	<meta charset="utf-8">
-    	<title>The Reliability ToolKit (RTK), Reliability, Safety Analysis, and Risk Assessment Software and Tools, Linux</title>
-    	<meta name="viewport" content="width=1100"/>
+<head>
+<meta charset="utf-8">
+<title>The RAMS ToolKit (RAMSTK), Reliability, Safety Analysis, and Risk
+Assessment Software and Tools, Linux</title>
+<meta name="viewport" content="width=1100"/>
 
-    	<script src="/javascripts/jquery-1.8.2.min.js"></script>
-    	<script src="/javascripts/bootstrap.js"></script>
+<script src="/javascripts/jquery-1.8.2.min.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
 
-    	<!-- Le styles -->
-    	<link href="/stylesheets/bootstrap.css" rel="stylesheet">
-    	<link href="/stylesheets/reliaqual.css" rel="stylesheet">
-    
-    	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    	<!--[if lt IE 9]>
-      	<link href="/stylesheets/rstudio-ie8.css" rel="stylesheet">
-        	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    	<![endif]-->
+<!-- Le styles -->
+<link href="/stylesheets/bootstrap.css" rel="stylesheet">
+<link href="/stylesheets/reliaqual.css" rel="stylesheet">
 
-    	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<link href="/stylesheets/rstudio-ie8.css" rel="stylesheet">
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-    	<!-- Fav icon -->
-    	<link rel="icon" href="/images/bigorb.png">
-	</head>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
-  	<body class="consulting">
-   	<div class="colorband"></div>
+<!-- Fav icon -->
+<link rel="icon" href="/images/bigorb.png">
+</head>
 
-    	<!-- Top navigation bar -->
-    	<div class="primary-nav">
-      	<table>
-        	<tr>
-          		<td class="left">
-          			<div></div>
-          		</td>
-          		<td class="brand">
-          			<a href="/">
-          				<img src="/images/RQA.2x.png" 
-          				title="The Reliability ToolKit (RTK), Reliability, Safety Analysis, and Risk Assessment Software and Tools, Linux"
-          				alt="The Reliability ToolKit (RTK), Reliability, Safety Analysis, and Risk Assessment Software and Tools, Linux"
-          				width="91" height="32"/>
-          			</a>
-          		</td>
-          
-            	<td class="link home"><a href="&#x2F;">Home</a></td>
-          
-            	<td class="link consulting"><a href="&#x2F;consulting&#x2F;">Consulting</a></td>
-          
-            	<td class="link training"><a href="&#x2F;training&#x2F;">Training</a></td>
-          
-            	<td class="link rtk active"><a href="&#x2F;rtk&#x2F;">RTK</a></td>
+<body class="consulting">
+<div class="colorband"></div>
 
-            	<td class="link portal"><a href="&#x2F;portal&#x2F;">Client Portal</a></td>
-                      
-            	<!-- td class="link about"><a href="&#x2F;about&#x2F;">About</a></td -->
-          
-            	<!-- td class="link "><a href="http:&#x2F;&#x2F;blog.rstudio.org&#x2F;">Blog</a></td -->
-          
-          		<td class="right"><div></div></td>
-        		</tr>
-      	</table>
-		</div>
+<!-- Top navigation bar -->
+<div class="primary-nav">
+<table>
+<tr>
+<td class="left">
+<div></div>
+</td>
 
-    	<div class="secondary">
-      	<h3 class="area"><a href="../rtk/index.html">The Reliability ToolKit (RTK)</a></h3>
-      		<ul class="secondary-nav">
-          		<li class="active"><a href="../rtk/index.html">RTK Overview</a></li>
-          		<li><a href="http://www.reliaqual.com/images/screenshots/index.php/RTK">Screenshots</a></li>
-      		</ul>
-    	</div>
+<td class="brand">
+<a href="/">
+<img src="/images/RQA.2x.png"
+title="The RAMS ToolKit (RAMSTK), Reliability, Safety Analysis,
+and Risk Assessment Software and Tools, Linux"
+alt="The RAMS ToolKit (RAMSTK), Reliability, Safety Analysis, and
+Risk Assessment Software and Tools, Linux"
+width="91" height="32"/>
+</a>
+</td>
 
-    	<div class="mainbody">
-      
-      	<style type="text/css">
-				.welcome {
-  					margin-bottom: 36px;
-				}
-				.welcome p a {
-  					font-weight: 600;
-				}
-				.design {
-  					box-sizing:border-box;
-				  	-moz-box-sizing:border-box;
-  					-webkit-box-sizing:border-box;
-  					padding-right: 12px;
-  					margin-bottom: 36px;
-				}
-				.design .phase {
-  					display: block;
-  					margin-bottom: 3px;
-  					padding: 0;
-  					line-height: 1;
-  					font-size: 11px;
-  					font-weight: 700;
-  					text-transform: uppercase;
-				}
-				.design.concept .phase {
-  					color: rgb(80, 175, 80);
-				}
-				.design.preliminary .phase {
-  					color: rgb(160, 160, 230);
-				}
-				.design.detailed .phase {
-  					color: rgb(90, 90, 90);
-				}
-				.dsign.validation .phase {
-  					color: rgb(240, 128, 60);
-				}
-				.design.custom .phase {
-  					color: rgb(240, 128, 60);
-				}
-				.design h3 {
-  					font-size: 18px;
-  					font-weight: 600;
-  					margin: 0 0 2px 0;
-  					line-height: 1;
-				}
-				.design h3 a {
-  					color: inherit;
-				}
-				.design h3 a:hover {
-  					text-decoration: none;
-				}
-				.design a.btn {
-  					display: inline-block;
-  					position: relative;
-  					top: 4px;
-  					margin: 0 12px 0 8px;
-				}
-			</style>
+<td class="link home"><a href="&#x2F;">Home</a></td>
 
-			<div class="row">
-				<div class="span8">
-    				<div class="row">
-      					<div class="span8">
-        					<h1>Features</h1>
-        					<p>RTK is available for Linux 
-        					<img src="../images/linux.png" width="22" height="22" alt=""> and 
-        					Windows <img src="../images/windows.png" width="22" height="22" alt="">.</p>
-        					
-        					<p>There is no such things as a "one-size fits all" reliability program or process.  
-        					Every organization needs to have a process that fits best with their corporate 
-        					culture and their industry.  However, there are certain methods and analyses 
-        					common to all successful reliability programs.  RTK supports many of these 
-        					popular analyses and more functionality is added with every release.  Many 
-        					existing RTK features are discussed on this page or can be seen in the RTK 
-        					<a href="http://www.reliaqual.com/images/screenshots/index.php/RTK">
-        					screenshot</a> gallery.</p>  
+<td class="link consulting">
+<a href="&#x2F;consulting&#x2F;">Consulting</a>
+</td>
 
-							<p>RTK is layed out in three windows.  Each of these windows is referred to as a 
-							book.  There is a Module Book, a Work Book, and a List Book.  The Module Book
-							allows the selection of one of the nine RTK modules.  Lists and matrices associated
-							with the selected module are found in the List Book.  The attributes of the selected
-							item in the Module Book can be viewed and edited in the Work Book.  This 
-							<a href="http://www.reliaqual.com/images/screenshots/var/albums/RTK/RTKLayout.png?m=1410709971">
-							screenshot</a> shows the layout of these three books before loading a program 
-							database.</p>
-      				      											
-							<p></p>
+<td class="link training">
+<a href="&#x2F;training&#x2F;">Training</a>
+</td>
 
-							<p>For additional information about the Reliability ToolKit (RTK), download the RTK
-							<a href="http://www.reliaqual.com/rtk/salesliterature/RTKOverview.pdf">brochure</a> 
-							or fill out the  
-							<a href="https://reliaqual.wufoo.com/forms/qoutc9f09v1qf7">request form</a> 
-							and someone will contact you.</p>
-      					</div>
-      				</div>
-      				
-      				<div class="row">
-      					<div class="span8">
-        					<h3>Modularity</h3>
-        					<p>As mentioned above, RTK consists of modules.  A module represents a 
-        					characteristic of a system or an aspect of the development program.  Each 
-        					module provides a different view of the system under development.  RTK consists 
-        					of nine modules.  These nine modules are:</p>
-        					<ul>
-        						<li>Revision</li>
-        						<li>Function</li>
-        						<li>Requirement</li>
-        						<li>Hardware</li>
-        						<li>Software</li>
-        						<li>Verification & Validation</li>
-        						<li>Program Incidents</li>
-        						<li>Reliability Testing</li>
-        						<li>Survival Analysis</li>
-        					</ul>
-        					<p>Modules are accessed via the RTK Module Book.  These modules are 
-        					discussed in greater detail in the side pane.</p>
-      					</div>
-      				</div>
-      				
-      				<div class="row">
-      					<div class="span8">
-        					<h3>Attributes</h3>
-        					<p>Each RTK module has various attributes.  The number of attributes, as well as 
-        					the content of each attribute, varies with each RTK module.  Attributes can be 
-        					anything from the name of a revision, the failure rate of a hardware assembly, or 
-        					the failure mode of a function.</p>
-          					<p>Attributes are primarily accessed through the RTK Work Book.</p>
-      					</div>
-      				</div>
+<td class="link rtk active">
+<a href="&#x2F;rtk&#x2F;">RAMSTK</a>
+</td>
 
-					<div class="row">
-      					<div class="span8">
-        					<h3>Navigation</h3>
-        					<p>There are two methods for navigating through the various modules in RTK.  
-        					The first method, or the "classical" method, is to select the module to work with in 
-        					the Module Book.  With the module you wish to work with selected in the Module 
-        					Book, you would select the proper page in the Work Book for the analysis you wish 
-        					to perform.</p>
-        					
-        				   	<p>The second method of navigating RTK is through the use of a process map.  
-        			   		With the process map, a mouse click will take you to the proper module in the
-        			   		Module Book and the appropriate page in the Work Book to perform the analysis.  
-        			   		For example, if your reliability process includes a step to gather stakeholder inputs 
-        			   		(i.e., Voice of the Customer), clicking on this step in the process map will select 
-        			   		the Revision module in the Module Book and the first page in the Work Book.</p>
-        			   		 
-        			    	<p>This screenshot shows RTK being navigated via the process map.  However,
-        			    	because no two organizations have exactly the same reliability process, ReliaQual 
-        			    	Associates will work with your team to accurately define your process and then 
-        			    	create the navigable process map.</p>
-      					</div>
-      				</div>
+<td class="right"><div></div></td>
 
-					<div class="row">
-      					<div class="span8">
-        					<h3>Customization</h3>
-        					<p>Many aspects of RTK are user-configurable.  Users have some control over the 
-        					look and feel of the user interface such as the position of the tabs in the 
-        					various notebooks.  The column headings in the various spreadsheet-type views can 
-        					be set by the user if the default headings don't meet their needs.  For example, 
-        					the column headings in the FMEA use typical MIL-STD-1629A or automotive terminology.  
-        					These headings can be changed by the user to reflect the terminology used by their
-        					organization.  Items in many of the drop down lists can be deleted, edited, or
-        					appended by users with administrator credentials.</p>
-        					
-        			   		<p>Customization beyond this can be performed by ReliaQual Associates, LLC.  
-        			   		Just <a href="https://reliaqual.wufoo.com/forms/qoutc9f09v1qf7">contact</a> 
-        			   		us with your customization needs and we'll provide a proposal.</p>
-      					</div>
-      				</div>
-      			</div>
-      			
-      			 <h2>The RTK Modules</h2>      				
-      			<div class="design span4 concept">
-        			<h3>Revision</h3>
-        			<p>The Revision module is used to document and analyze different revisions or 
-        			configurations of a system.  For example, a revision could be a model year, a 
-        			change to an existing system, or a configuration that includes optional 
-        			features.</p>
-					<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/Revision">Screenshots</a></p>
-      			</div>
+</tr>
+</table>
+</div>
 
-      			<div class="design span4 concept">
-        			<h3>Function</h3>
-        			<p>The Function module documents and analyzes the functions of a system.  
-        			Functional analysis is important during conceptual design before hardware details 
-        			are defined.  As the development program progresses and hardware becomes 
-        			defined, the Function module allows the relationships between hardware 
-        			assemblies and functions to be visualized.</p>
-          			<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/Function">Screenshots</a></p>
-      			</div>
-    
-      			<div class="design span4 concept">
-        			<h3>Requirements</h3>
-        			<p>Requirements for a configuration are documented and analyzed in the 
-        			Requirements module.  Documentation of a revision's requirements begins with 
-        			the elicitation of stakeholder inputs.  Once stakeholder inputs are captured, 
-        			requirements can be developed and written in engineering terminology.  These 
-        			requirements can then be analyzed for clarity, completeness, consistency, and 
-        			verifiability.  Finally, those tasks that will be used to validate the design 
-        			can be linked to each requirement.</p>
-          		<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/Requirement">Screenshots</a></p>
-      			</div>
-      			      				
-      			<div class="design span4 concept">
-        			<h3>Hardware</h3>
-        			<p>Analysis of the system hardware is performed in the Hardware module.  
-        			Available analyses include reliability allocations, hazards analysis, similar item 
-        			analysis,handbook reliability predictions, and FMEA.  The FMEA supports 
-        			MIL-STD-1629A and automotive style (RPN) criticality analysis.</p>
-          			<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/Hardware">Screenshots</a></p>
-      			</div>
-	
-	      		<div class="design span4 concept">
-   	     			<h3>Software</h3>
-      	  			<p>System software is analyzed to determine program risk for each Software 
-      	  			module.  Risk is determined by considering the development organization, methods 
-      	  			used, documentation of requirements, and tools and test techniques used to 
-      	  			develop the software.</p>
-         	 		<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/Software">Screenshots</a></p>
-      			</div>
- 
-				<div class="design span4 concept">
-        			<h3>Verification & Validation</h3>
-        			<p>Verification and validation tasks are those analyses and tests used to verify 
-        			and validate the design satisfies program requirements.  These tasks can be linked 
-        			to the requirement to be verified and validated in the Requirements module.  
-        			Within the Verification & Validation module, the overall progress of the validation 
-        			program is tracked.</p>
-          			<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/VerificationValidation">Screenshots</a></p>
-      			</div>
-    
-    			<div class="span8"></div>
-    				 
-      			<div class="design span4 concept">
-        			<h3>Reliability Testing</h3>
-        			<p>Testing is an important aspect of a development program.  In the Testing 
-        			module, various reliability tests can be planned, tracked, and the results assessed.  
-        			Currently RTK supports reliability growth, reliability demonstration/qualification, and 
-        			environmental stress screening (ESS) testing.</p>
-          			<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/Testing">Screenshots</a></p>
-      			</div>
+<div class="secondary">
+<h3 class="area">
+<a href="../rtk/index.html">The RAMS ToolKit (RAMSTK)</a>
+</h3>
+</div>
 
-				<div class="span8"></div>
-				      				
-      			<div class="design span4 concept">
-        			<h3>Program Incidents</h3>
-        			<p>Regardless of how well a development program proactively addresses 
-        			reliability, there will always be problems.  While ReliaQual Associates recommends 
-        			a dedicated FRACA application, RTK provides a minimal FRACA system with the 
-        			Incidents module.  The intent of the Incidents module is to provide the Reliability 
-        			Engineer a view of problems that often are not be available in non-FRACA 
-        			production systems that capture failure information.  Computerized maintenance 
-        			management systems (CMMS) are one example.  Additionally, the Incident 
-        			module allows the engineer to add information to a failure record that may not be 
-        			germane to the production system's purpose, but is critical from a reliability 
-        			perspective.</p>
-          			<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/Incidents">Screenshots</a></p>
-      			</div>
+<div class="mainbody">
 
-				<div class="span8"></div>
-				
-      			<div class="design span4 concept">
-        			<h3>Survival Analysis</h3>
-        			<p>Estimating the reliability of a system under development can be 
-        			accomplished in several ways.  Field and test data from an earlier version, different 
-        			configuration, or similar system adjusted as necessary for the new system 
-        			generally provides a more accurate estimate than handbook prediction methods.  
-        			After fielding a system, it is important to track the field reliability and adjust 
-        			maintenance policies or make design changes as needed to address problems or 
-        			trends.  The Survival Analysis module gives the Reliability Engineer the ability to 
-        			analyze field and test failure data to estimate reliability metrics such as failure 
-        			rates, MTBF, and reliability.  RTK's Survival Analysis module supports analytical 
-        			methods appropriate for repairable and non-repairable items.</p>
-          			<p><a class="btn btn-mini pull-left" href="http://www.reliaqual.com/images/screenshots/index.php/RTK/SurvivalAnalysis">Screenshots</a></p>
-      			</div>
-  			   
-  			   <script type="text/javascript">
-						var qoutc9f09v1qf7;(function(d, t) {
-							var s = d.createElement(t), options = {
-								'userName':'reliaqual',
-								'formHash':'qoutc9f09v1qf7',
-								'autoResize':true,
-								'height':'601',
-								'async':true,
-								'host':'wufoo.com',
-								'header':'show',
-								'ssl':true};
-							s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-							s.onload = s.onreadystatechange = function() {
-								var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-								try { qoutc9f09v1qf7 = new WufooForm();qoutc9f09v1qf7.initialize(options);qoutc9f09v1qf7.display(); } catch (e) {}};
-								var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-						})(document, 'script');
-					</script>
+<style type="text/css">
+.welcome {
+margin-bottom: 36px;
+}
+.welcome p a {
+font-weight: 600;
+}
+.design {
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+padding-right: 12px;
+margin-bottom: 36px;
+}
+.design .phase {
+display: block;
+margin-bottom: 3px;
+padding: 0;
+line-height: 1;
+font-size: 11px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.design.concept .phase {
+color: rgb(80, 175, 80);
+}
+.design.preliminary .phase {
+color: rgb(160, 160, 230);
+}
+.design.detailed .phase {
+color: rgb(90, 90, 90);
+}
+.dsign.validation .phase {
+color: rgb(240, 128, 60);
+}
+.design.custom .phase {
+color: rgb(240, 128, 60);
+}
+.design h3 {
+font-size: 18px;
+font-weight: 600;
+margin: 0 0 2px 0;
+line-height: 1;
+}
+.design h3 a {
+color: inherit;
+}
+.design h3 a:hover {
+text-decoration: none;
+}
+.design a.btn {
+display: inline-block;
+position: relative;
+top: 4px;
+margin: 0 12px 0 8px;
+}
+</style>
 
-					<div class="row goodbye">
-      				<p class="span8"></p>
-    				</div>
-  			</div>
-  		</div>
+<div class="row">
+<div class="span8">
+<div class="row">
+<div class="span8">
+<h1>Features</h1>
+<p>RAMSTK is available for Linux
+<img src="../images/linux.png" width="22" height="22" alt="">
+and Windows <img src="../images/windows.png" width="22" height="22" alt="">.</p>
 
-    	<!-- footer -->
-    	<div class="container">
-      		<div class="footer">
-        		<span class="footer-links">
-          		&copy; 2014 ReliaQual Associates, LLC
-        		</span>
-	      	</div>
-		</div>
-		
-		<!-- Piwik -->
-		<script type="text/javascript">
-  			var _paq = _paq || [];
-  			_paq.push(["trackPageView"]);
-  			_paq.push(["enableLinkTracking"]);
+<p>There is no such things as a "one-size fits all" reliability program or
+process.  Every organization needs to have a process that fits best with their
+corporate culture and their industry.  However, there are certain methods and
+analyses common to all successful reliability programs.  RAMSTK supports many
+of these popular analyses and more functionality is added with every release.
+Many existing RAMSTK features are discussed on this page.
 
-  			(function() {
-    			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.reliaqual.com/piwik/";
-    			_paq.push(["setTrackerUrl", u+"piwik.php"]);
-    			_paq.push(["setSiteId", "1"]);
-    			var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    			g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-  			})();
-		</script>
-		<!-- End Piwik Code -->
-				
-		<!-- Google Analytics Code -->
-		<script>
-  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<p>RAMSTK is layed out in three windows.  Each of these windows is referred to
+as a Book.  There is a Module Book, a Work Book, and a List & Matrices Book.
+The Module Book allows the selection of one of the five RAMSTK modules.  Lists
+and matrices associated with the selected module are found in the List Book.
+The attributes of the selected item in the Module Book can be viewed and edited
+in the Work Book.</p>
 
-  			ga('create', 'UA-55008669-1', 'auto');
-  			ga('send', 'pageview');
+<p></p>
 
-		</script>
-		<!-- End Google Analytics Code -->
-	</body>
+<p>For additional information about the RAMS ToolKit (RAMSTK), fill out the
+<a href="https://reliaqual.wufoo.com/forms/qoutc9f09v1qf7">request form</a>
+and someone will contact you.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="span8">
+<h3>Modularity</h3>
+<p>As mentioned above, RAMSTK consists of modules.  A module represents a
+characteristic of a system or an aspect of the development program.  Each
+module provides a different view of the system under development.  RAMSTK
+consists of five modules.  These five modules are:</p>
+<ul>
+<li>Revision</li>
+<li>Function</li>
+<li>Requirement</li>
+<li>Hardware</li>
+<li>Verification & Validation</li>
+</ul>
+<p>Modules are accessed via the RAMSTK Module Book.  These modules are
+discussed in greater detail in the side pane.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="span8">
+<h3>Attributes</h3>
+<p>Each RAMSTK module has various attributes.  The number of attributes, as
+well as the content of each attribute, varies with each RAMSTK module.
+Attributes can be anything from the name of a revision, the failure rate of a
+hardware assembly, or the failure mode of a function.</p>
+<p>Attributes are primarily accessed through the RAMSTK Work Book.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="span8">
+<h3>Customization</h3>
+<p>Many aspects of RAMSTK are user-configurable.  Users have some control over
+the look and feel of the user interface such as the position of the tabs in the
+various notebooks.  The column headings in the various spreadsheet-type views
+can be set by the user if the default headings don't meet their needs.  For
+example, the column headings in the FMEA use typical MIL-STD-1629A or J1739
+terminology.  These headings can be changed by the user to reflect the
+terminology used by their organization.  Items in many of the drop down lists
+can be deleted, edited, or appended by users with administrator
+credentials.</p>
+
+<p>Customization beyond this can be performed by ReliaQual Associates, LLC.
+Just <a href="https://reliaqual.wufoo.com/forms/qoutc9f09v1qf7">contact</a>
+us with your customization needs and we'll provide a proposal.</p>
+</div>
+</div>
+</div>
+
+<h2>The RAMSTK Modules</h2>
+<div class="design span4 concept">
+<h3>Revision</h3>
+<p>The Revision module is used to document and analyze different revisions or
+configurations of a system.  For example, a revision could be a model year, a
+change to an existing system, or a configuration that includes optional
+features.</p>
+</div>
+
+<div class="design span4 concept">
+<h3>Requirements</h3>
+<p>Requirements for a configuration are documented and analyzed in the
+Requirements module.  Documentation of a revision's requirements begins with
+the elicitation of stakeholder inputs.  Once stakeholder inputs are captured,
+requirements can be developed and written in engineering terminology.  These
+requirements can then be analyzed for clarity, completeness, consistency, and
+verifiability.  Finally, those tasks that will be used to validate the design
+can be linked to each requirement.</p>
+</div>
+
+<div class="design span4 concept">
+<h3>Function</h3>
+<p>The Function module documents and analyzes the functions of a system.
+Functional analysis is important during conceptual design before hardware details
+are defined.  As the development program progresses and hardware becomes
+defined, the Function module allows the relationships between hardware
+assemblies and functions to be visualized.</p>
+</div>
+
+<div class="design span4 concept">
+<h3>Hardware</h3>
+<p>Analysis of the system hardware is performed in the Hardware module.
+Available analyses include reliability allocations, hazards analysis, similar item
+analysis,handbook reliability predictions, and FMEA.  The FMEA supports
+MIL-STD-1629A and automotive style (RPN) criticality analysis.</p>
+</div>
+
+<div class="design span4 concept">
+<h3>Verification & Validation</h3>
+<p>Verification and validation tasks are those analyses and tests used to verify
+and validate the design satisfies program requirements.  These tasks can be linked
+to the requirement to be verified and validated in the Requirements module.
+Within the Verification & Validation module, the overall progress of the validation
+program is tracked.</p>
+</div>
+
+<script type="text/javascript">
+var qoutc9f09v1qf7;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'reliaqual',
+'formHash':'qoutc9f09v1qf7',
+'autoResize':true,
+'height':'601',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { qoutc9f09v1qf7 = new WufooForm();qoutc9f09v1qf7.initialize(options);qoutc9f09v1qf7.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');
+</script>
+
+<div class="row goodbye">
+<p class="span8"></p>
+</div>
+</div>
+</div>
+
+<!-- footer -->
+<div class="container">
+<div class="footer">
+<span class="footer-links">
+&copy; 2014, 2018 ReliaQual Associates, LLC
+</span>
+</div>
+</div>
+
+<!-- Piwik -->
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(["trackPageView"]);
+_paq.push(["enableLinkTracking"]);
+
+(function() {
+var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.reliaqual.com/piwik/";
+_paq.push(["setTrackerUrl", u+"piwik.php"]);
+_paq.push(["setSiteId", "1"]);
+var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<!-- End Piwik Code -->
+
+<!-- Google Analytics Code -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55008669-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics Code -->
+</body>
 </html>
